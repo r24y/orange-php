@@ -1,0 +1,42 @@
+html{
+	margin: 0px;
+} 
+
+body {
+	margin: 0px;
+	font-family: sans-serif;
+	background-color: #eee;
+}
+
+#main_content {
+	margin: auto;	
+	margin-top: 60px;
+	width: 50%;
+}
+
+#brand{
+	padding: 0.4em 0.9em;
+	font-weight: bold;
+}
+
+.ui.fixed.main.menu {
+	top: 0px;
+}
+
+.feed .header{
+	color: #333;
+}
+
+img.logo {
+	width: 24px;
+	height: 24px;
+	display: inline;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+
+span.logo {
+	margin: 0;
+	padding: 0;
+}
