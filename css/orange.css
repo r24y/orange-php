@@ -40,3 +40,11 @@ span.logo {
 	margin: 0;
 	padding: 0;
 }
+
+.raised.event.segment .container{
+	padding-left:16px;
+}
+
+a{
+	color: rgb(0, 181, 173);
+}

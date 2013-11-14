@@ -1,12 +1,13 @@
-CREATE TABLE `passkeys` (
-	`passkeys`	TEXT NOT NULL,
+CREATE TABLE `users` (
+	`username` TEXT NOT NULL,
+	`passkey`	TEXT NOT NULL,
 	`name`	TEXT NOT NULL,
-	PRIMARY KEY(passkeys)
+	PRIMARY KEY(username)
 );
 
-CREATE TABLE `run` (
+CREATE TABLE `activity` (
 	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-	`owner_passkey`	TEXT NOT NULL,
+	`owner`	TEXT NOT NULL,
 	`ts`	INTEGER NOT NULL,
 	`activity_name`	INTEGER NOT NULL,
 	`distance`	INTEGER NOT NULL,
@@ -19,5 +20,7 @@ CREATE TABLE `trackPoint` (
 	`ts`	INTEGER NOT NULL,
 	`lat`	REAL NOT NULL,
 	`lon`	REAL NOT NULL,
-	`sigma`	INTEGER NOT NULL
+	`sigma`	INTEGER NOT NULL,
+	`duration`	INTEGER NOT NULL,
+	`distance`	INTEGER NOT NULL
 );
